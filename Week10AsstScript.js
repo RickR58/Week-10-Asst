@@ -7,10 +7,9 @@ Button on-click should add info to table
 how do I get it from the <input> fields and the value()
 Need the header information names, etc
 How are we getting the values from the form -- on submit -- then append() that infor to the talbe.
-Need to get balues with : getElementById( )
+Need to get values with : getElementById( )
 */
 
-// LEFT OFF AT 15:25
 const formButton = document.getElementById("formSubmit");
 let number = 0 + 1;
 
