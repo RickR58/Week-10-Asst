@@ -11,49 +11,52 @@ Need to get balues with : getElementById( )
 */
 
 // LEFT OFF AT 15:25
-
 const formButton = document.getElementById("formSubmit");
-let number = 0;
+let number = 0 + 1;
 
 formButton.addEventListener("click", (event) => {
-  event.preventDefault(); //keeps fields from refreshing on submit
-  console.log(event);
+  event.preventDefault();
 
-  // Variables to hold in form
   let newDogsName = document.getElementById("newDogsName").value;
   let breedX = document.getElementById("breedX").value;
-  let nickname = document.getElementById("nickname");
+  let nickname = document.getElementById("nickname").value; // Get the value here
   let rescueShelter = document.getElementById("rescueShelter").value;
   let dogAge = document.getElementById("dogAge").value;
 
-  //Append Rows
   let newTableRow = document.createElement("tr");
 
   let numberNode = document.createElement("td");
-  numberNode.innerHTML = number;
+  numberNode.textContent = number; // Use textContent for plain text
   newTableRow.append(numberNode);
 
   let dogsNameNode = document.createElement("td");
-  dogsNameNode.innerHTML = newDogsName;
+  dogsNameNode.textContent = newDogsName;
   newTableRow.append(dogsNameNode);
 
   let breedXNode = document.createElement("td");
-  breedXNode.innerHTML = breedX;
+  breedXNode.textContent = breedX;
   newTableRow.append(breedXNode);
 
   let nicknameNode = document.createElement("td");
-  nicknameNode.innerHTML = nickname;
+  nicknameNode.textContent = nickname; // Use the value of nickname
   newTableRow.append(nicknameNode);
 
   let rescueShelterNode = document.createElement("td");
-  rescueShelterNode.innerHTML = rescueShelter;
+  rescueShelterNode.textContent = rescueShelter;
   newTableRow.append(rescueShelterNode);
 
   let dogAgeNode = document.createElement("td");
-  dogAgeNode.innerHTML = dogAge;
+  dogAgeNode.textContent = dogAge;
   newTableRow.append(dogAgeNode);
 
-  console.log(newTableRow);
-
   document.getElementById("tbody").appendChild(newTableRow);
+
+  number++;
+
+  //Clear form inputs:
+  document.getElementById("newDogsName").value = "";
+  document.getElementById("breedX").value = "";
+  document.getElementById("nickname").value = "";
+  document.getElementById("rescueShelter").value = "";
+  document.getElementById("dogAge").value = "";
 });

@@ -10,71 +10,41 @@
     integrity="sha384-GLh1TQ8iRABdZL1603oVMNSktQ0pбb7In1Z13/Jг59b6EGGoI1aFkы7€mDA6jбgD”
     crossorigin="anonymous" />
   </head>
-  <body>
+  <body style="background-color: lightskyblue;">
     <img
       src="images/header image.jpeg"
       width="815"
       alt="Two black and white rescue dogs"
       alt="Centered Image" style="display: block; margin: 0 auto;" />
-    <h1 style="display: flex; justify-content: center;">Rick's Rescue Dog Roundup</h1>
-
+    <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 70px;  display: flex; justify-content: center;">Rick's Rescue Dog Roundup</h1>
+    <p>
+      <h4 style="text-align: center; color:royalblue;"><i>Have you got an awesome rescue dog? Tell us about it!</i></h4>
+    </p>
     <table class="table table-success table-hover">
-      <thead class="table-bordered">
-        <thead id="tHead"></thead>
-        <th>#</th>
-        <th>My Dogs</th>
-        <th>Breed X</th>
-        <th>Nickname</th>
-        <th>Rescue Shelter</th>
-        <th>Age</th>
+      <thead>
+          <tr>
+              <th>#</th>
+              <th>Your Dogs</th>
+              <th>Breed Mix</th>
+              <th>Nickname(s)</th>
+              <th>Rescue Shelter</th>
+              <th>Age</th>
+          </tr>
       </thead>
-    
-      <tbody id="tBody">
-        <tr>
-            <td>0</td>
-            <td>Buster</td>
-            <td>Terrier Mix</td>
-            <td>Buster Boo, Boo Bear, Boozer</td>
-            <td>City Pound</td>
-            <td>14 yrs</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Auggie</td>
-            <td>Chiweenie</td>
-            <td>Auggie Dog, Augustus, Tiniest Friend</td>
-            <td>City Pound</td>
-            <td>12 yrs</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Franklin</td>
-            <td>Chihuahua/Beagle/Rat Terrier</td>
-            <td>Ed</td>
-            <td>Watermelon Mtn. Ranch</td>
-            <td>5 yrs</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Luna</td>
-            <td>Chihuahua/Rat Terrier</td>
-            <td>Lunatic, Roo</td>
-            <td>Watermelon Mtn. Ranch</td>
-            <td>5 yrs</td>
-        </tr>
-      </tbody>
+      <tbody id="tbody"></tbody>
+  </table>
 
-    </table>
-    <p ><h4 style="text-indent: 1em; color:cornflowerblue";><i>Have you got an awesome rescue dog? Tell us about it!</i></h4></p>
-    <form>
+
+
+<form>
       <div>
-        <label for="newDogsName" class="form-label" style="text-indent: 1em; color: chocolate";margin-left: 20px; ><strong>What do you call your dog?</strong></label>
-        <input type="text" class="form-control" placeholder="New Dog's Name" id="newDogsName"  style="width: 90%;"/>
+        <label for="newDogsName" class="form-label" style="text-indent: 1em; color: chocolate"; ><strong>What do you call your dog?</strong></label>
+        <input type="text" class="form-control" placeholder="New Dog's Name" id="newDogsName" style="width: 90%;"/>
       </div>
 
       <div><br>
         <label for="breedX" class="form-label" style="text-indent: 1em; color: chocolate"><strong>What breeds do you think are in your dog?</strong></label>
-        <input type="text" class="form-control" placeholder="Breed Mix" id="breedX"  style="width: 90%;"/>
+        <input type="text" class="form-control" placeholder="Breed Mix" id="breedX" style="width: 90%;"/>
       </div>
 
       <div><br>
